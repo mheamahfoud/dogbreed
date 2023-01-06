@@ -1,0 +1,1 @@
+web: gunicorn dog_breed_classifier.wsgi

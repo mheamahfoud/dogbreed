@@ -1,0 +1,40 @@
+
+{% load static %}
+<html>
+<head >
+  <meta charset="utf-8">
+  <title>Image Classification</title>
+  <link rel="stylesheet" href="{% static 'css/classify.css' %}" type="text/css" />
+  <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"  type="text/css">
+  <link  href="{% static 'css/bootstrap.min.css' %}"   type="text/css">
+  <script type="text/javascript"src="{% static 'js/jquery-1.12.4.js' %}"></script>
+  <script  type="text/javascript"src="{% static 'js/sharer.min.js' %}"></script>
+  <script type="text/javascript"src="{% static 'js/classify.js' %}"></script>
+</head>
+<body>
+  <div class="table">
+    <div class="table-cell">
+      <div class="modal">
+        <button type="button" id="clear" class="clear" style=" display: none; " >Reset</button>
+      <div id="profile" style="margin-left: 35%;" >
+        <label>Upload or Drag And Drop Your Dog Photo Here</label></div>
+     
+        <div class="editable" style="display: none;"><input  type="text" id="mydog" name="DogName" placeholder="Enter Your Dog's Name" /><span id="numloc"></span> </div>
+        <img id='img-dog-src' src="" style="display: none;">
+          <button button type="button" id="predic" class="predic spinner-button btn btn-primary mb-2" style="display: none;">predic Breed of Dog</button>
+        <div class="rating-card"  >
+          <div class="rating-process">
+          </div >
+        </div>
+        <div id="social-media" style="display: none;">
+        <a href="#" id="share-fb" class="sharer button"><i class="fa fa-3x fa-facebook-square"style="float:left; padding: 0.1em"></i></a>
+        <a href="#" id="share-tw" class="sharer button"><i class="fa fa-3x fa-twitter-square" style="float:left;padding: 0.1em"></i></a>
+        <a href="#" id="share-li" class="sharer button"><i class="fa fa-3x fa-linkedin-square" style="float:left;padding: 0.1em"></i></a>
+        </div>
+      </div>
+    </div>
+ </div>
+    <input type="file" id="mediaFile" accept="image/*">
+
+</body>
+</html>

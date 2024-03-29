@@ -4,19 +4,12 @@ Welcome to the Dog Breed Classifier project! This Django web application utilize
 
 ## Installation
 
-### Requirements
 
-- Python 3.x
-- Django 3.x
-- TensorFlow 2.x
-- NumPy
-- Pillow
-
-### Installation Steps
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/dog-breed-classifier.git
-pip install -r requirements.txt
-python manage.py runserver
+   git clone  https://github.com/mheamahfoud/dogbreed.git
+2. cd dogbreed   
+3.   pip install -r requirements.txt
+4.   python manage.py runserver
